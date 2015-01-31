@@ -150,6 +150,7 @@ machdir-$(CONFIG_SH_LBOX_RE2)			+= mach-lboxre2
 machdir-$(CONFIG_SH_CAYMAN)			+= mach-cayman
 machdir-$(CONFIG_SH_RSK)			+= mach-rsk
 
+machdir-y			+= apsh4
 ifneq ($(machdir-y),)
 core-y	+= $(addprefix arch/sh/boards/, \
 	     $(filter-out ., $(patsubst %,%/,$(machdir-y))))
